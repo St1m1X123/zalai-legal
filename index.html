@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Політика конфіденційності — ZalAI</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #080b10;
+      color: rgba(255,255,255,0.85);
+      line-height: 1.7;
+      padding: 0 16px 64px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    header {
+      padding: 48px 0 32px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      margin-bottom: 40px;
+    }
+    .logo {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #A3E635;
+      margin-bottom: 12px;
+    }
+    h1 { font-size: 28px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+    .meta { font-size: 13px; color: rgba(255,255,255,0.4); }
+    h2 {
+      font-size: 16px; font-weight: 700;
+      color: #A3E635;
+      margin: 36px 0 12px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    p { margin-bottom: 14px; font-size: 15px; color: rgba(255,255,255,0.75); }
+    ul { margin: 0 0 14px 20px; }
+    li { font-size: 15px; color: rgba(255,255,255,0.75); margin-bottom: 6px; }
+    a { color: #22D3EE; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 20px 24px;
+      margin: 20px 0;
+    }
+    footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      font-size: 13px;
+      color: rgba(255,255,255,0.3);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">ZALAI</div>
+  <h1>Політика конфіденційності</h1>
+  <p class="meta">Остання редакція: 3 червня 2026 р.</p>
+</header>
+
+<p>Ця політика описує, які персональні дані збирає ZalAI («Додаток», «ми»), як вони використовуються та які права є у користувача («ви»).</p>
+
+<h2>1. Які дані ми збираємо</h2>
+
+<p><strong>Дані акаунту</strong></p>
+<ul>
+  <li>Email-адреса</li>
+  <li>Ім'я та фото профілю (якщо використовуєте вхід через Google)</li>
+</ul>
+
+<p><strong>Фітнес-профіль</strong></p>
+<ul>
+  <li>Вік, стать, зріст, вага</li>
+  <li>Фітнес-ціль, рівень підготовки, місце тренування</li>
+  <li>Доступне обладнання, кількість тренувань на тиждень, нотатки про здоров'я</li>
+</ul>
+
+<p><strong>Дані тренувань</strong></p>
+<ul>
+  <li>Список вправ, підходів, повторень та ваги</li>
+  <li>Дати та тривалість тренувань</li>
+  <li>AI-згенеровані програми та тренування</li>
+</ul>
+
+<p><strong>Технічні дані</strong></p>
+<ul>
+  <li>Журнал AI-запитів (лічильник для rate-limit — 5 генерацій на день)</li>
+  <li>Звіти про збої та помилки (анонімізовані через Sentry)</li>
+</ul>
+
+<h2>2. Як ми використовуємо дані</h2>
+<ul>
+  <li>Надання персоналізованих тренувань та AI-рекомендацій</li>
+  <li>Відображення вашого прогресу та статистики</li>
+  <li>Захист від зловживань (rate-limit AI-генерацій)</li>
+  <li>Покращення стабільності та виправлення помилок</li>
+</ul>
+<p>Ми не продаємо ваші дані третім особам і не використовуємо їх для таргетованої реклами.</p>
+
+<h2>3. Треті сторони</h2>
+
+<div class="card">
+  <p><strong>Supabase</strong> — база даних, аутентифікація та сховище файлів. Сервери розташовані в ЄС/США.<br>
+  <a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a></p>
+
+  <p><strong>Google (OAuth та Gemini AI)</strong> — аутентифікація через Google-акаунт; AI-генерація тренувань через Gemini API.<br>
+  <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
+
+  <p style="margin-bottom:0"><strong>Sentry</strong> — автоматичні звіти про збої (без персональних даних).<br>
+  <a href="https://sentry.io/privacy/" target="_blank">sentry.io/privacy</a></p>
+</div>
+
+<h2>4. Зберігання та безпека</h2>
+<p>Всі дані зберігаються на серверах Supabase і захищені Row Level Security (RLS) — кожен користувач бачить лише свої дані. Передача даних захищена протоколом HTTPS/TLS.</p>
+
+<h2>5. Видалення даних</h2>
+<p>Ви можете видалити акаунт і всі пов'язані дані будь-коли:</p>
+<ul>
+  <li><strong>В додатку:</strong> Налаштування → «Видалити акаунт»</li>
+  <li><strong>Email:</strong> <a href="mailto:serbin.goole777777@gmail.com">serbin.goole777777@gmail.com</a></li>
+</ul>
+<p>Після підтвердження запиту всі ваші дані (профіль, тренування, програми, аватар) видаляються протягом 24 годин і не можуть бути відновлені.</p>
+
+<h2>6. Права користувача</h2>
+<p>Відповідно до GDPR та застосовного законодавства ви маєте право:</p>
+<ul>
+  <li>Отримати копію своїх даних</li>
+  <li>Виправити неточні дані (через розділ «Профіль» в додатку)</li>
+  <li>Видалити акаунт і всі дані</li>
+  <li>Подати скаргу до наглядового органу захисту даних</li>
+</ul>
+<p>Для будь-яких запитів звертайтесь: <a href="mailto:serbin.goole777777@gmail.com">serbin.goole777777@gmail.com</a></p>
+
+<h2>7. Діти</h2>
+<p>Додаток не призначений для дітей до 13 років. Ми не збираємо навмисно дані осіб молодше 13 років.</p>
+
+<h2>8. Зміни в політиці</h2>
+<p>У разі суттєвих змін ми повідомимо вас через Push-сповіщення або оновимо дату редакції вгорі цієї сторінки. Продовження використання Додатку означає згоду з оновленою політикою.</p>
+
+<h2>9. Контакти</h2>
+<p>З питань конфіденційності звертайтесь:<br>
+Email: <a href="mailto:serbin.goole777777@gmail.com">serbin.goole777777@gmail.com</a></p>
+
+<footer>
+  ZalAI · Політика конфіденційності · 2026
+</footer>
+
+</body>
+</html>
