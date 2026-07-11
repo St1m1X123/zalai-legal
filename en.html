@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — ZalAI</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #080b10;
+      color: rgba(255,255,255,0.85);
+      line-height: 1.7;
+      padding: 0 16px 64px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    header {
+      padding: 48px 0 32px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      margin-bottom: 40px;
+    }
+    .logo {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #A3E635;
+      margin-bottom: 12px;
+    }
+    h1 { font-size: 28px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+    .meta { font-size: 13px; color: rgba(255,255,255,0.4); }
+    h2 {
+      font-size: 16px; font-weight: 700;
+      color: #A3E635;
+      margin: 36px 0 12px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    p { margin-bottom: 14px; font-size: 15px; color: rgba(255,255,255,0.75); }
+    ul { margin: 0 0 14px 20px; }
+    li { font-size: 15px; color: rgba(255,255,255,0.75); margin-bottom: 6px; }
+    a { color: #22D3EE; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 20px 24px;
+      margin: 20px 0;
+    }
+    footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      font-size: 13px;
+      color: rgba(255,255,255,0.3);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">ZALAI</div>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated: July 10, 2026 · <a href="./">Українська версія</a></p>
+</header>
+
+<p>This policy describes what personal data ZalAI (the "App", "we") collects, how it is used, and what rights you (the "user") have.</p>
+
+<h2>1. What data we collect</h2>
+
+<p><strong>Account data</strong></p>
+<ul>
+  <li>Email address</li>
+  <li>Name and profile photo (if you sign in with Google)</li>
+</ul>
+
+<p><strong>Fitness profile</strong></p>
+<ul>
+  <li>Age, gender, height, weight</li>
+  <li>Fitness goal, experience level, training location</li>
+  <li>Available equipment, workouts per week, health notes</li>
+</ul>
+
+<p><strong>Health notes are a special category of data.</strong> The field about injuries and limitations is voluntary and optional. By entering this information, you give your explicit consent to its processing for a single purpose — adapting workout recommendations to your limitations. You can change or delete this data at any time in the "Profile" section, or together with your account.</p>
+
+<p><strong>Workout data</strong></p>
+<ul>
+  <li>Lists of exercises, sets, reps and weights</li>
+  <li>Workout dates and duration</li>
+  <li>AI-generated programs and workouts</li>
+</ul>
+
+<p><strong>Technical data</strong></p>
+<ul>
+  <li>AI request log (a counter for rate limiting — 5 generations per day)</li>
+  <li>Crash and error reports (anonymized via Sentry)</li>
+</ul>
+
+<h2>2. How we use data</h2>
+<ul>
+  <li>Providing personalized workouts and AI recommendations</li>
+  <li>Displaying your progress and statistics</li>
+  <li>Abuse protection (rate limiting of AI generations)</li>
+  <li>Improving stability and fixing errors</li>
+</ul>
+<p>We do not sell your data to third parties and do not use it for targeted advertising.</p>
+
+<h2>3. Third parties</h2>
+
+<div class="card">
+  <p><strong>Supabase</strong> — database, authentication and file storage. Servers are located in the EU/US.<br>
+  <a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a></p>
+
+  <p><strong>Google (OAuth and Gemini AI)</strong> — authentication via your Google account; AI workout generation via the Gemini API. Only the fitness profile and workout parameters required for generation are sent to Gemini — never your name, email or photo.<br>
+  <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
+
+  <p style="margin-bottom:0"><strong>Sentry</strong> — automatic crash reports (without personal data).<br>
+  <a href="https://sentry.io/privacy/" target="_blank">sentry.io/privacy</a></p>
+</div>
+
+<h2>4. Storage and security</h2>
+<p>All data is stored on Supabase servers and protected by Row Level Security (RLS) — each user can only access their own data. Data in transit is protected with HTTPS/TLS.</p>
+
+<h2>5. Data deletion</h2>
+<p>You can delete your account and all associated data at any time:</p>
+<ul>
+  <li><strong>In the app:</strong> Settings → "Delete account"</li>
+  <li><strong>Email:</strong> <a href="mailto:zalai.ua21@gmail.com">zalai.ua21@gmail.com</a></li>
+</ul>
+<p>Once the request is confirmed, all your data (profile, workouts, programs, avatar) is deleted within 24 hours and cannot be restored.</p>
+
+<h2>6. Your rights</h2>
+<p>Under the GDPR and applicable law you have the right to:</p>
+<ul>
+  <li>Receive a copy of your data</li>
+  <li>Correct inaccurate data (via the "Profile" section in the app)</li>
+  <li>Delete your account and all data</li>
+  <li>Lodge a complaint with a data protection supervisory authority</li>
+</ul>
+<p>For any requests, contact: <a href="mailto:zalai.ua21@gmail.com">zalai.ua21@gmail.com</a></p>
+
+<h2>7. Children</h2>
+<p>The App is not intended for children under 13. We do not knowingly collect data from anyone under 13 years of age.</p>
+
+<h2>8. Changes to this policy</h2>
+<p>In case of significant changes we will notify you via push notification or update the revision date at the top of this page. Continued use of the App constitutes acceptance of the updated policy.</p>
+
+<h2>9. Contact</h2>
+<p>For privacy-related questions, contact:<br>
+Email: <a href="mailto:zalai.ua21@gmail.com">zalai.ua21@gmail.com</a></p>
+
+<h2>10. Disclaimer</h2>
+<p>ZalAI is a fitness application, not a medical service. Workout programs generated by artificial intelligence are of an informational and advisory nature, <strong>do not constitute medical advice</strong>, diagnosis or treatment, and are not a substitute for consulting a doctor or a qualified trainer.</p>
+<p>Consult a doctor before starting training — especially if you have injuries, chronic conditions or other limitations. You assess your own physical condition and perform exercises at your own discretion and risk. We cannot guarantee that a generated program will be safe or appropriate for your specific health condition, and we accept no liability for injuries or other harm related to the use of the App.</p>
+
+<footer>
+  ZalAI · Privacy Policy · 2026
+</footer>
+
+</body>
+</html>
